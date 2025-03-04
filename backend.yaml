@@ -1,0 +1,5 @@
+- name: configuring mysql server
+  hosts: backend
+  become: yes
+  roles:
+  - backend   # this will go to roles/mysql and run the main.yaml file.
